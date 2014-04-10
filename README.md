@@ -1,13 +1,19 @@
 ```bash
+apt-get install libncurses5-dev libpcap-dev libnl-dev
 wget http://www.kismetwireless.net/code/kismet-2013-03-R1b.tar.xz
+tar xfv ./kismet-2013-03-R1b.tar.xz
+cd kismet*
+./configure
+make
 # --> install as root
-vi /etc/kismet/kismet.conf
-# uncomment line 
+vi /usr/local/etc/kismet.conf
+# uncomment line
 ncsource=wlan0
 # change line
 gps=true
 # to
 gps=false
+/usr/local/bin/kismet_server
 ```
 
 kismetclient
