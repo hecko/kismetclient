@@ -1,3 +1,15 @@
+```bash
+wget http://www.kismetwireless.net/code/kismet-2013-03-R1b.tar.xz
+# --> install as root
+vi /etc/kismet/kismet.conf
+# uncomment line 
+ncsource=wlan0
+# change line
+gps=true
+# to
+gps=false
+```
+
 kismetclient
 ============
 
